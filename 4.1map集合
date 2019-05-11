@@ -1,0 +1,18 @@
+1、IOC  控制反转
+2、创建对象
+ spring文件的配置文件默认名称： applicationContext
+<beans xmlns="  " location="  ">
+<bean id="hello" class="类的全限定名">
+
+
+</bean>  
+
+
+</beans>
+3、获取spring创建的对象，加载配置文件，src目录
+applicationContext  ac=new ClassPathXmlApplicationCcontext("applicationCOntext")
+ac.getBean("  xml")；
+ac.getBean(hello.class);
+4、类的属性设置
+name ="   ";    value="   ";
+
