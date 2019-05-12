@@ -1,0 +1,54 @@
+Animal    
+方法重写特点： 方法体不同，方法名形参列表相同，返回值（类型继承关系）访问修饰符可以跟父类的一一致或者小于
+
+@Countroller  控制层
+
+
+@Service  标志业务层  关联控制器和DAO
+@Repository   标志持久层 dao+javabean
+@Conponent  无法定义Javabean属于mvc那一层的时候，想通过spring创建对象，添加注解
+
+1、添加jar包
+2、配置文件扫描
+3、创建类  @Conponent（value=""） 
+如果不指定ID，添加默认的ID ，类名全小写
+4、测试类
+type="assignable" 过滤的是类
+
+type="annotation" 过滤的是注解
+
+<context:include-filter type="" expression="">
+<context:exclude-filter type="" expression=""/>
+
+
+一、spring创建对象，不需要再配置文件中取添加bean
+1、通过注解创建对象
+1）注解：JVM特殊含义
+@Override
+@+类名
+子类继承父类，继承父类的非私有的方法和属性
+Animal       public void eat(){  //具体行为   }
+Dog          
+@Override
+public void eat(){  //自己行为 }  扩展、重写
+方法重写特点：方法体不同、方法名形参列表相同，返回值一致，访问修饰符可以跟父类的一致或者小于
+2）基于AOP机制，引用AOPjar包
+4大核容器：beans\context\core\expression laguage
+Aop
+3) Spring中的注解（创建对象），4个
+@Controller   修饰控制器(作用类似于Servlet)
+模型层：
+@Service   标志业务层（关联控制器和dao）
+@Repository   标志持久层---》DAO + JavaBean
+UserDAO  new UserDAO()
+User   new User()
+@Component   无法定义JavaBean属于MC哪一层的时候，但是又想通过spring创建对象，才去添加注解、
+
+3)设置属性的值
+A： int String double 常量 ，   8种基本类型+API提供的类型  ，使用@Value ，省略setter 方法
+
+
+B：自定义类型，两个类之间的关系 @autowired 扫码添加注解的属性对应的Javabean是否有4个注解之一
+1:1  
+
+
