@@ -1,0 +1,13 @@
+spring：扫描包
+service   UserService
+repository  XXXmapper.java
+applicationContext.xml Spring JDBs
+context/core/beans/aop/expression 
+
+springMVC扫描包 
+Controller UserController
+springmvc-servlet.xml
+webmvc/
+
+MyBatis 操作数据库
+mybatis-config.xml  
