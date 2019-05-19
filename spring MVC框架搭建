@@ -1,0 +1,5 @@
+1、导入jar
+2、配置前端控制器
+3、添加Spring MVC的web-inf
+4、添加springmvc配置文件的包扫描
+5、Content层包下创建  xxController 给类添加注解
